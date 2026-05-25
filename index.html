@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Trash Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="title-area">
+                <h1>♻️ SMART TRASH</h1>
+                <p>Live AI Monitor v5.0</p>
+            </div>
+        </header>
+
+        <main id="dashboard" class="hidden">
+            <div class="glass-card total-card">
+                <h2>TỔNG SỐ RÁC ĐÃ PHÂN LOẠI</h2>
+                <div class="total-number" id="lblTotal">0</div>
+                <p class="last-update">Cập nhật lúc: <span id="lblTime">--:--:--</span></p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="glass-card stat-item">
+                    <div class="stat-icon">💧</div>
+                    <h3>Chai nước</h3>
+                    <div class="stat-value" id="val_Chai_nước">0</div>
+                </div>
+                <div class="glass-card stat-item">
+                    <div class="stat-icon">🥫</div>
+                    <h3>Lon nước ngọt</h3>
+                    <div class="stat-value" id="val_Lon_nước_ngọt">0</div>
+                </div>
+                <div class="glass-card stat-item">
+                    <div class="stat-icon">🍬</div>
+                    <h3>Vỏ kẹo</h3>
+                    <div class="stat-value" id="val_Vỏ_kẹo">0</div>
+                </div>
+                <div class="glass-card stat-item">
+                    <div class="stat-icon">🚬</div>
+                    <h3>Thuốc lá</h3>
+                    <div class="stat-value" id="val_Thuốc_lá">0</div>
+                </div>
+            </div>
+        </main>
+        
+        <div id="welcome-msg" class="glass-card text-center">
+            <h2>Đang kết nối Firebase Cloud...</h2>
+            <p>Vui lòng chờ trong giây lát.</p>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
